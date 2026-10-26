@@ -675,7 +675,7 @@ curl https://nine0-load-balanced-app.onrender.com/users
 *GET http://localhost:9797/users - Browser - Returns [{"id":1,"name":"RaviTeja","email":"raviteja@aws.com","department":null}] - Proof of RDS persistence after POST - In real ALB + RDS, POST to instance-1 visible from instance-2 via shared RDS MySQL*
 
 ### Demo 8 – Render Live - Deploy Succeeded - LIVE
-[Demo 8 Render](screenshots/demo8.png)
+![Demo 8 Render](screenshots/demo8.png)
 
 *Render Dashboard - 90-load-balanced-app - STATUS: Deploy succeeded | Live - DURATION: 2m12s - DEPLOYED: Oct 27, 2026 at 10:30:00 AM GMT+5:30 - TRIGGER: Auto-Deploy - SOURCE: commit - Logs: HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:raviteja90 user=SA - Tomcat started on port 9797 - Started LoadBalancedApplication in 8.795 seconds - Proof of Live Deployment on Internet - Docker Multi-Stage + ALB Simulation + Instance Tracking working on Render*
 
@@ -894,7 +894,7 @@ If you found this project helpful, consider giving it a ⭐ Star on GitHub.
 
 **Single Repo:** [90-load-balanced-app](https://github.com/raviteja-dev950/90-load-balanced-app)
 
-**Live URL:** https://nine0-load-balanced-app.onrender.com/ 
+**Live URL:** https://nine0-load-balanced-app.onrender.com/
 
 **Instance URL:** https://nine0-load-balanced-app.onrender.com/instance -> Shows instanceId, Healthy, inTargetGroup, uptimeMs, requestCount - ALB simulation proof
 
